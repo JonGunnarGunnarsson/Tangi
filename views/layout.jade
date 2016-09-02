@@ -1,0 +1,107 @@
+doctype html
+html(lang='is')
+  head
+    meta(charset='utf-8')
+    title Tangi
+    link(rel='stylesheet', type='text/css', href='stylesheets/main.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/header.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/footer.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/responsive.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/form.css')
+    link(rel='stylesheet', type='text/css', href='stylesheets/login.css')
+    script(src='ckeditor/ckeditor.js')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Berkshire+Swash', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lobster+Two', rel='stylesheet', type='text/css')
+  body
+    header.header-fixed
+      .header-limiter
+        h1
+          a(href='#')
+            | Tang
+            span Inn
+        nav
+          a(href='/') Home
+          a(href='surrounding') Surroundings
+          // class="selected"!
+          a(href='#') About
+          a(href='#') Pricing
+          a(href='#') Contact
+          if user
+            a(href='/logout') Logout 
+              i.fa.fa-power-off
+          
+    .header-fixed-placeholder
+    // Scripts!
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script.
+      $(document).ready(function(){
+      var showHeaderAt = 150;
+      var win = $(window),
+      body = $('body');
+      // Show the fixed header only on larger screen devices
+      if(win.width() > 600){
+      // When we scroll more than 150px down, we set the
+      // "fixed" class on the body element.
+      win.on('scroll', function(e){
+      if(win.scrollTop() > showHeaderAt) {
+      body.addClass('fixed');
+      }
+      else {
+      body.removeClass('fixed');
+      }
+      });
+      }
+      });
+
+    block content
+    
+ footer.myFooter
+      // Wrapper utan um allt saman!
+      .leftF
+        // Vinstri Hlið Byrjar!
+        h1
+          | Tang
+          span Inn
+        p.linkar
+          a(href='#') Home
+          a(href='#') Blog
+          a(href='#') Verðskrá
+          a(href='#') About
+          a(href='#') Contact Us
+        p.companyname Tanginn ©	2016
+      // Vinstri hlið Endar!
+      .centerF
+        div
+          i.fa.fa-map-marker
+          p
+            span Götunúmer
+            |  Stykkishólmi, Iceland
+        div
+          i.fa.fa-phone
+          p +354 Símanúmer
+        div
+          i.fa.fa-envelope
+          p
+            a(href='mailto:support@company.com') Tanginn@Eitthvað.is
+      .rightF
+        p.About
+          span Stutt Lýsing
+          | 					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        .icon
+          a(href='#')
+            i.fa.fa-facebook
+          a(href='#')
+            i.fa.fa-twitter
+          a(href='#')
+            i.fa.fa-linkedin
+          a(href='#')
+            i.fa.fa-github
+          if user
+            a(href='/logout')
+              i.fa.fa-power-off
+  
+  script(src='javascripts/jquery.scrollme.js')
+  script(src='javascripts/jquery.scrollme.min.js')
+  script(src='javascripts/scrollbg.js')
+ 

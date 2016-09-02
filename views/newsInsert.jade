@@ -1,0 +1,23 @@
+extend layout
+
+block content
+    .form-style-5
+        form
+        fieldset
+            if user
+                h1 Þú ert skráður inn sem #{user.displayName}
+            legend
+            span.number 1
+            |  Titill
+            input(type='text', name='field1', placeholder='Titill Fréttar *')
+            span.number 2
+            | Dagsetning
+            input(type='date', name='field2')
+
+            span.number 3
+            |  Frétt
+            textarea(name='field3',id='editor1', rows='10', cols='80')
+            script.
+                CKEDITOR.replace( 'editor1' );
+        input(type='submit', value='Senda Frétt')
+

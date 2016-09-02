@@ -1,0 +1,12 @@
+extend layout
+
+block content
+    form(action='/login', method='post', name='login' class='loginf')
+      div
+        label Notendanafn:
+        input(type='text', name='username', class='user')
+      div
+        label Lykilorð:
+        input(type='password', name='password', class='pwd')
+      div
+        input(type='submit', class='btn-login', value='Innskráning')

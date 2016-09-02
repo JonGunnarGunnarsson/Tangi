@@ -1,0 +1,148 @@
+.myFooter{
+	background-color: #FFFFFF;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	position: relative;
+	float: left;
+	margin-top: 10%;
+}
+
+.myFooter .leftF,
+.myFooter .centerF,
+.myFooter .rightF{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.myFooter .leftF{
+	width: 40%;
+}
+
+/* The company logo */
+
+.myFooter h1{
+	font: 400 60px/0.2 'Lobster Two', Helvetica, sans-serif;
+	color: #2b2b2b;
+	text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+}
+
+.myFooter h1 span{
+	color:  #91FE3D;
+}
+
+/* Footer links */
+
+.myFooter .linkar{
+	color:  #000000;
+	margin: 20px 0 12px;
+
+	padding: 0;
+}
+
+.myFooter .linkar a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+	margin-left: 10px;
+}
+
+.myFooter .companyname{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.myFooter .centerF{
+	width: 35%;
+}
+
+.myFooter .centerF i{
+	background-color:#91FE3D;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.myFooter .centerF i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.myFooter .centerF p{
+	display: inline-block;
+	color: #000000;
+	vertical-align: middle;
+	margin:0;
+}
+
+.myFooter .centerF p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.myFooter .centerF p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.myFooter .rightF{
+	width: 20%;
+}
+
+.myFooter .About{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.myFooter .About span{
+	display: block;
+	color:  #000000;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.myFooter .icon{
+	margin-top: 25px;
+}
+
+.myFooter .icon a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:#91FE3D;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 5px;
+	margin-bottom: 5px;
+}

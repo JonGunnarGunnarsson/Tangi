@@ -1,0 +1,80 @@
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 16px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
+@media (max-width: 880px) {
+	.Albums{
+		margin-top:40%;
+	}
+	.Albums .leftA,
+	.Albums .centerleftA,
+	.Albums .centerrightA,
+	.Albums .rightA{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.Albums img{
+		width: 20%;
+		height: 20%;
+	}
+	
+	
+	.surroundings .text{
+		width: 100%;
+	}
+	.surroundings .animateme{
+		width: 100%;
+	}
+	.surroundings1 .text1{
+		width:100%;
+	}
+	.surroundings1 .animateme{
+		width: 100%;
+	}
+
+	.myFooter{
+		font: bold 14px sans-serif;
+		margin-top:20%;
+	}
+
+	.myFooter .leftF,
+	.myFooter .centerF,
+	.myFooter .rightF{
+		display: block;
+		width: 100%;
+		margin-bottom: 10%;
+		text-align: center;
+	}
+
+	.myFooter .centerF i{
+		margin-left: 0;
+	}
+
+
+}
